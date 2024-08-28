@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//For Element in App.js---
+import el from "./App";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// For Component in App.js---
+import App from "./App";
+
+//----Jsx code---
+ let el = <h1>Faiza Choudhry</h1>;  
+  ReactDOM.render(el,document.getElementById("root"));
+
+//---Bable----
+ let el = React.createElement("h1", null, "Hello World");  
+ ReactDOM.render(el,document.getElementById("root"));
+
+ // for Componenet in App.js
+ReactDOM.render(<App />,document.getElementById("root"));
