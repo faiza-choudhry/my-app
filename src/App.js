@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 // Creating Element----
 let elem = React.createElement("h1", null, "Hello World;");
+export defaullt elem;
 
 // Creating Component----
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     //  return <h1>Hello world..</h1>   -----also write this in JSX----
     }
 }
+export default App;
 
 //----Functional Component----without props---
 function Student(){
@@ -23,6 +25,7 @@ const Student = () => {
 const Student = props => {
     return <h1>Hello {props.name}</h1>;
 };
+export default Student;
 
 //-------Class Component with props-------
 class Teacher extends Component {
