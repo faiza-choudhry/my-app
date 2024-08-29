@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+//import for Student2 in "./student.js"---- props
+import Student2 from "./student";
+ReactDOM.render(<Student2 name="Faiza" roll={1069} />,document.getElementById("root"));
+
 //import for App Function-----
 import App from "./App";
 ReactDOM.render(<App />,document.getElementById("root"));
