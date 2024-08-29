@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-//Import for Student Function---
+//import for App Function-----
+import App from "./App";
+ReactDOM.render(<App />,document.getElementById("root"));
+
+// Import for Student Function---
 import Student from "./App";
 
 //Import for Element in App.js---
@@ -26,5 +30,5 @@ ReactDOM.render(<Student />,document.getElementById("root"));
 //------render function with props------
 ReactDOM.render(<Student name="React" />,document.getElementById("root"))
 
-//-----render Class Components with props----
+// //-----render Class Components with props----
 ReactDOM.render(<Teacher name="React" />,document.getElementById("root"));

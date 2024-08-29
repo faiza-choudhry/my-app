@@ -7,9 +7,10 @@ let elem = React.createElement("h1", null, "Hello World;");
 class App extends Component {
     render(){
         return React.createElement("h1", null, "Hello world..");
-    //  return <h1>Hello world..</h1>   -----also write this in JSX----
+        // return <h1>Hello world..</h1>   -//----also write this in JSX----
     }
 }
+export default App;
 
 //----Functional Component----without props---
 function Student(){
@@ -23,6 +24,7 @@ const Student = () => {
 const Student = props => {
     return <h1>Hello {props.name}</h1>;
 };
+export default Student;
 
 //-------Class Component with props-------
 class Teacher extends Component {
@@ -32,3 +34,15 @@ class Teacher extends Component {
 }
 export default Teacher;
 
+//-----App function of Student1 from "./student.js"-----
+import React from "react";
+import Student1 from "./student";
+export const App = () => {
+  return (
+    <div>
+        <Student1 />
+        <Student1 />
+    </div>
+  )
+}
+export default App;
