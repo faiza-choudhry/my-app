@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 // Creating Element----
 let elem = React.createElement("h1", null, "Hello World;");
+export defaullt elem;
 
 // Creating Component----
 class App extends Component {
