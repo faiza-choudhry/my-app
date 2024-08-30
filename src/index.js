@@ -1,38 +1,44 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-//import for Student2 in "./student.js"---- props
-import Student2 from "./student";
+
+//import Student8 from "./ArgumentsToEventHandlres"
+import Student8 from "./ArgumentsToEventHandlers";
+ReactDOM.render(<Student8 />, document.getElementById("root"));
+
+// //import for Student8 in "./Update state"
+import Student7 from "./Update state";
+ReactDOM.render(<Student7 roll="105"/>,document.getElementById("root"));
+
+//import for Student5 in "./State.jsx"
+import Student5 from "./State";
+ReactDOM.render(<Student5 />, document.getElementById("root"));
+
+// //import for student6 from "./State"
+import student6 from "./State";
+ReactDOM.render(<student6 roll="106" />,document.getElementById("root"));
+
+// //import for Student4 in "./EventHandling in React Js"
+import Student4 from "./Event Handling in React Js";
+ReactDOM.render(<Student4 name="Faiza"/>, document.getElementById("root"));
+
+// //import for Student in "./EventHandling in React Js"
+import Student from "./Event Handling in React Js";
+ReactDOM.render(<Student roll="102"/>, document.getElementById("root"));
+
+// //  //import for Student2 in "./Props.js"---- props
+import Student2 from "./Props";
 ReactDOM.render(<Student2 name="Faiza" roll={1069} />,document.getElementById("root"));
 
-//import for App Function-----
+// //  //import for App Function in "./App.js-----
 import App from "./App";
 ReactDOM.render(<App />,document.getElementById("root"));
 
-// Import for Student Function---
-import Student from "./App";
+//  //-----render function without props----
+import Student3 from "./Props";
+ReactDOM.render(<Student3 name ="Faiza"/>,document.getElementById("root"));
 
-//Import for Element in App.js---
-import elem from "./App";
 
-//Import for Component in App.js---
-import App from "./App";
-
-//------------------Jsx code--------------------
-let el = <h1>Faiza Choudhry</h1>;  
-ReactDOM.render(el,document.getElementById("root"));
-
-//---------Bable convert Jsx code into this code--------
-let el1 = React.createElement("h1", null, "Hello World");  
-ReactDOM.render(el1,document.getElementById("root"));
-
- //-----render for Componenet App in App.js-----
-ReactDOM.render(<App />,document.getElementById("root"));
-
-//-----render function without props----
-ReactDOM.render(<Student />,document.getElementById("root"));
-//------render function with props------
-ReactDOM.render(<Student name="React" />,document.getElementById("root"))
-
-// //-----render Class Components with props----
+//-----render Class Components with props----
+import Teacher from "./Props";
 ReactDOM.render(<Teacher name="React" />,document.getElementById("root"));
